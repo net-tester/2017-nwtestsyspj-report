@@ -1,0 +1,64 @@
+%% -*- coding: utf-8-unix -*-
+
+\documentclass[uplatex,dvipdfmx,report]{jsbook}
+\usepackage{newpxtext} % use Palatino/Helvetica
+\usepackage{color} % coloring
+\usepackage{array,tabularx,longtable,colortbl} % table
+\usepackage{cite} % overcite
+
+% table footnote
+% http://tgrr-putan.blogspot.jp/2012/11/tex.html
+\usepackage{threeparttable}
+
+\usepackage[dvipdfmx,hiresbb]{graphicx} % figure
+\usepackage{float,wrapfig} % figure/table layout
+\usepackage{upquote} % backquote
+\usepackage{lscape} % page landscape change
+
+% href and pdf bookmark
+% https://texwiki.texjp.org/?hyperref
+\usepackage{url} % url
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{%
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ bookmarksdepth=3,%
+ colorlinks=true,%
+ setpagesize=false,%
+ pdftitle={ネットワークテストシステム プロジェクト 2017年度 成果報告書},%
+ pdfauthor={NetTester Team}}
+
+\title{ネットワークテストシステム プロジェクト \\ 2017年度 成果報告書}
+\author{NetTester Team}
+
+\pagestyle{headings} % ノンブル/柱
+
+\begin{document}
+
+\maketitle % 表紙
+
+\frontmatter
+\setcounter{tocdepth}{2}
+\tableofcontents % 目次
+\listoffigures % 図目次
+\listoftables % 表目次
+
+\mainmatter
+\include{text/abstract}
+%% \include{text/issues}
+%% \include{text/approach}
+%% \include{text/nettester_design}
+%% \include{text/nettester_usage}
+%% \include{text/poc_design}
+%% \include{text/test_scenario}
+%% \include{text/conclusion}
+
+%% \appendix
+%% \include{text/dictionary}
+%% \include{text/appendix_sw}
+%% \include{text/appendix_bk}
+%% \include{text/cites}
+
+\end{document}
+
